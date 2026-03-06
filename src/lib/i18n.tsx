@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
-export type Language = "en" | "tr" | "vi";
+export type Language = "en" | "tr" | "vi" | "ru";
 
 type TranslationKeys = {
   nav: {
