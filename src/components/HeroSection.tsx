@@ -25,7 +25,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/10 mb-6 sm:mb-8">
-              <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+              <img src="/logo.png" alt="" className="w-5 h-5 rounded" />
               <span className="text-xs sm:text-sm font-medium text-primary-foreground/80">Licensed EU Employment Agency</span>
             </div>
           </motion.div>

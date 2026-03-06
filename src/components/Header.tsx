@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useI18n, langLabels, Language } from "@/lib/i18n";
 import { Menu, X, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
 
 const FACEBOOK_MESSENGER = "https://m.me/globalbridges.int";
 
@@ -9,37 +10,52 @@ export const Header = () => {
   const { t, lang, setLang } = useI18n();
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   const navItems = [
-    { label: t.nav.home, href: "#home" },
-    { label: t.nav.services, href: "#services" },
-    { label: t.nav.howItWorks, href: "#how-it-works" },
-    { label: t.nav.about, href: "#about" },
-    { label: t.nav.contact, href: "#contact" },
+    { label: t.nav.home, href: isHome ? "#home" : "/" },
+    { label: t.nav.services, href: isHome ? "#services" : "/#services" },
+    { label: t.nav.howItWorks, href: isHome ? "#how-it-works" : "/#how-it-works" },
+    { label: t.nav.forAgencies, href: isHome ? "#agencies" : "/#agencies" },
+    { label: t.nav.about, href: isHome ? "#about" : "/#about" },
+    { label: t.nav.news, href: "/news" },
+    { label: t.nav.contact, href: isHome ? "#contact" : "/#contact" },
   ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-xl border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between h-16 sm:h-20">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-2 sm:gap-3">
-          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gold-gradient flex items-center justify-center">
-            <span className="font-heading font-bold text-base sm:text-lg text-primary">GB</span>
+        <Link to="/" className="flex items-center gap-2 sm:gap-3">
+          <img src="/logo.png" alt="Global Bridges INT." className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg object-contain" />
+          <div className="flex flex-col leading-tight">
+            <span className="font-heading font-bold text-base sm:text-lg text-foreground leading-none">Global Bridges</span>
+            <span className="font-heading font-semibold text-xs text-accent leading-none">INT.</span>
           </div>
-          <span className="font-heading font-bold text-lg sm:text-xl text-foreground">Global Bridge</span>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
-          {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              {item.label}
-            </a>
-          ))}
+        <nav className="hidden lg:flex items-center gap-6">
+          {navItems.map((item) =>
+            item.href.startsWith("/") && !item.href.startsWith("/#") ? (
+              <Link
+                key={item.href}
+                to={item.href}
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <a
+                key={item.href}
+                href={item.href}
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {item.label}
+              </a>
+            )
+          )}
         </nav>
 
         {/* Right side */}
@@ -108,16 +124,27 @@ export const Header = () => {
             className="lg:hidden bg-card border-t border-border overflow-hidden"
           >
             <div className="container mx-auto px-6 py-4 flex flex-col gap-3">
-              {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
-                >
-                  {item.label}
-                </a>
-              ))}
+              {navItems.map((item) =>
+                item.href.startsWith("/") && !item.href.startsWith("/#") ? (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+                  >
+                    {item.label}
+                  </a>
+                )
+              )}
               <a
                 href={FACEBOOK_MESSENGER}
                 target="_blank"
