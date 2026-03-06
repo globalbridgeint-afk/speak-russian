@@ -306,4 +306,5 @@ export const langLabels: Record<Language, string> = {
   en: "English",
   tr: "Türkçe",
   vi: "Tiếng Việt",
+  ru: "Русский",
 };
