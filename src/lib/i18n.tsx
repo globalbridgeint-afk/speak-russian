@@ -9,6 +9,8 @@ type TranslationKeys = {
     howItWorks: string;
     about: string;
     contact: string;
+    news: string;
+    forAgencies: string;
     freeConsultation: string;
   };
   hero: {
@@ -65,6 +67,36 @@ type TranslationKeys = {
     workingHoursValue: string;
     satValue: string;
   };
+  blog: {
+    title: string;
+    subtitle: string;
+    readMore: string;
+    photo: string;
+    video: string;
+    review: string;
+    noItems: string;
+  };
+  agencies: {
+    title: string;
+    subtitle: string;
+    benefit1Title: string;
+    benefit1Desc: string;
+    benefit2Title: string;
+    benefit2Desc: string;
+    benefit3Title: string;
+    benefit3Desc: string;
+    benefit4Title: string;
+    benefit4Desc: string;
+    cta: string;
+    ctaDesc: string;
+  };
+  news: {
+    title: string;
+    subtitle: string;
+    backHome: string;
+    noNews: string;
+    readMore: string;
+  };
   footer: {
     rights: string;
     tagline: string;
@@ -79,6 +111,8 @@ const translations: Record<Language, TranslationKeys> = {
       howItWorks: "How It Works",
       about: "About Us",
       contact: "Contact",
+      news: "News",
+      forAgencies: "For Agencies",
       freeConsultation: "Free Consultation",
     },
     hero: {
@@ -122,7 +156,7 @@ const translations: Record<Language, TranslationKeys> = {
     about: {
       title: "About Us",
       subtitle: "Trusted by hundreds of clients across the globe",
-      p1: "Our company is an official international employment agency, registered and operating under EU law. We have been in the market for over 5 years and have helped hundreds of people obtain work permits, residence permits and stable positions in Europe.",
+      p1: "Global Bridges INT. is an official international employment agency, registered and operating under EU law. We have been in the market for over 5 years and have helped hundreds of people obtain work permits, residence permits and stable positions in Europe.",
       p2: "We believe that everyone deserves the opportunity to live with dignity and work legally. Our specialists speak several languages, understand the peculiarities of migration legislation of different countries and make the process as comfortable as possible.",
     },
     contact: {
@@ -134,6 +168,36 @@ const translations: Record<Language, TranslationKeys> = {
       workingHours: "Working Hours",
       workingHoursValue: "Mon-Fri: 9:00-18:00",
       satValue: "Sat: 10:00-15:00",
+    },
+    blog: {
+      title: "Blog & Reviews",
+      subtitle: "Photos, videos and testimonials from our clients",
+      readMore: "Read More",
+      photo: "Photo",
+      video: "Video",
+      review: "Review",
+      noItems: "No blog posts yet. Check back soon!",
+    },
+    agencies: {
+      title: "For Recruitment Agencies",
+      subtitle: "Partner with us to place your candidates in EU positions",
+      benefit1Title: "Ready Candidate Pool",
+      benefit1Desc: "Already have candidates? We handle the EU placement, documents and legal compliance for your workforce.",
+      benefit2Title: "Revenue Sharing",
+      benefit2Desc: "Earn commission on every successful placement through our transparent partnership program.",
+      benefit3Title: "Legal Framework",
+      benefit3Desc: "Full EU-compliant employment contracts, social insurance and work permits handled by our legal team.",
+      benefit4Title: "Dedicated Support",
+      benefit4Desc: "Personal account manager for your agency with priority processing and regular reporting.",
+      cta: "Become a Partner",
+      ctaDesc: "Contact us to discuss partnership opportunities and start placing your candidates in EU positions.",
+    },
+    news: {
+      title: "Latest News",
+      subtitle: "Stay updated with the latest from Global Bridges INT.",
+      backHome: "← Back to Home",
+      noNews: "No news articles yet. Stay tuned!",
+      readMore: "Read Full Article",
     },
     footer: {
       rights: "All rights reserved.",
@@ -147,11 +211,13 @@ const translations: Record<Language, TranslationKeys> = {
       howItWorks: "Nasıl Çalışır",
       about: "Hakkımızda",
       contact: "İletişim",
+      news: "Haberler",
+      forAgencies: "Ajanslara",
       freeConsultation: "Ücretsiz Danışmanlık",
     },
     hero: {
       title: "AB Ülkelerinde Resmi İstihdam",
-      subtitle: "Farklı ülkelerin vatandaşlarının Avrupa'da yasal olarak yaşamalarına, çalışmalarına ve gelişmelerine yardımcı olan lisanslı bir ajanstır. Her müşteri için güvenlik, şeffaflık ve istikrar.",
+      subtitle: "Farklı ülkelerin vatandaşlarının Avrupa'da yasal olarak yaşamalarına, çalışmalarına ve gelişmelerine yardımcı olan lisanslı bir ajanstır.",
       cta1: "Facebook'tan Mesaj Gönder",
       cta2: "Hizmetlerimiz",
       stat1: "5+",
@@ -167,11 +233,11 @@ const translations: Record<Language, TranslationKeys> = {
       s1Title: "AB'de İş Yerleştirme",
       s1Desc: "Resmi istihdam ve sosyal koruma ile AB ülkelerinde doğrulanmış iş ilanlarının seçimi.",
       s2Title: "Belge İşleme",
-      s2Desc: "AB mevzuatına uygun vize, oturma izni ve çalışma izni belgelerinin hazırlanması ve işlenmesi.",
+      s2Desc: "AB mevzuatına uygun vize, oturma izni ve çalışma izni belgelerinin hazırlanması.",
       s3Title: "Hukuki Destek",
       s3Desc: "İstihdam sürecinin ve ülkede kalışın yasallaştırılmasının tam hukuki desteği.",
       s4Title: "Varış Sonrası Destek",
-      s4Desc: "Konforlu bir taşınma için yeni ülkede konut, kayıt ve uyum konusunda yardım.",
+      s4Desc: "Yeni ülkede konut, kayıt ve uyum konusunda yardım.",
     },
     howItWorks: {
       title: "Nasıl Çalışır",
@@ -190,8 +256,8 @@ const translations: Record<Language, TranslationKeys> = {
     about: {
       title: "Hakkımızda",
       subtitle: "Dünya genelinde yüzlerce müşteri tarafından güvenilmektedir",
-      p1: "Şirketimiz, AB hukuku kapsamında kayıtlı ve faaliyet gösteren resmi bir uluslararası istihdam ajansıdır. 5 yılı aşkın süredir piyasadayız ve yüzlerce kişinin çalışma izni, oturma izni ve Avrupa'da istikrarlı pozisyon elde etmesine yardımcı olduk.",
-      p2: "Herkesin onurlu bir şekilde yaşama ve yasal olarak çalışma hakkı olduğuna inanıyoruz. Uzmanlarımız birçok dil konuşuyor, farklı ülkelerin göç mevzuatının özelliklerini anlıyor ve süreci olabildiğince rahat hale getiriyor.",
+      p1: "Global Bridges INT., AB hukuku kapsamında kayıtlı ve faaliyet gösteren resmi bir uluslararası istihdam ajansıdır. 5 yılı aşkın süredir piyasadayız ve yüzlerce kişinin çalışma izni, oturma izni ve Avrupa'da istikrarlı pozisyon elde etmesine yardımcı olduk.",
+      p2: "Herkesin onurlu bir şekilde yaşama ve yasal olarak çalışma hakkı olduğuna inanıyoruz.",
     },
     contact: {
       title: "İletişime Geçin",
@@ -202,6 +268,36 @@ const translations: Record<Language, TranslationKeys> = {
       workingHours: "Çalışma Saatleri",
       workingHoursValue: "Pzt-Cum: 9:00-18:00",
       satValue: "Cts: 10:00-15:00",
+    },
+    blog: {
+      title: "Blog & Yorumlar",
+      subtitle: "Müşterilerimizden fotoğraflar, videolar ve referanslar",
+      readMore: "Devamını Oku",
+      photo: "Fotoğraf",
+      video: "Video",
+      review: "Yorum",
+      noItems: "Henüz blog yazısı yok. Yakında tekrar kontrol edin!",
+    },
+    agencies: {
+      title: "İşe Alım Ajansları İçin",
+      subtitle: "Adaylarınızı AB pozisyonlarına yerleştirmek için bizimle ortak olun",
+      benefit1Title: "Hazır Aday Havuzu",
+      benefit1Desc: "Zaten adaylarınız mı var? AB yerleştirme, belge ve yasal uyumu biz hallederiz.",
+      benefit2Title: "Gelir Paylaşımı",
+      benefit2Desc: "Şeffaf ortaklık programımız aracılığıyla her başarılı yerleştirmede komisyon kazanın.",
+      benefit3Title: "Yasal Çerçeve",
+      benefit3Desc: "AB uyumlu iş sözleşmeleri, sosyal sigorta ve çalışma izinleri hukuk ekibimiz tarafından yürütülür.",
+      benefit4Title: "Özel Destek",
+      benefit4Desc: "Öncelikli işlem ve düzenli raporlama ile ajansınız için kişisel hesap yöneticisi.",
+      cta: "Ortak Olun",
+      ctaDesc: "Ortaklık fırsatlarını görüşmek ve adaylarınızı AB pozisyonlarına yerleştirmeye başlamak için bize ulaşın.",
+    },
+    news: {
+      title: "Son Haberler",
+      subtitle: "Global Bridges INT.'den en son güncellemelerle haberdar olun",
+      backHome: "← Ana Sayfaya Dön",
+      noNews: "Henüz haber yok. Takipte kalın!",
+      readMore: "Tam Makaleyi Oku",
     },
     footer: {
       rights: "Tüm hakları saklıdır.",
@@ -215,11 +311,13 @@ const translations: Record<Language, TranslationKeys> = {
       howItWorks: "Cách thức",
       about: "Về chúng tôi",
       contact: "Liên hệ",
+      news: "Tin tức",
+      forAgencies: "Cho đại lý",
       freeConsultation: "Tư vấn miễn phí",
     },
     hero: {
       title: "Việc làm chính thức tại các nước EU",
-      subtitle: "Chúng tôi là cơ quan được cấp phép giúp công dân từ các quốc gia khác nhau sống, làm việc và phát triển hợp pháp tại Châu Âu. An toàn, minh bạch và ổn định cho mọi khách hàng.",
+      subtitle: "Chúng tôi là cơ quan được cấp phép giúp công dân từ các quốc gia khác nhau sống, làm việc và phát triển hợp pháp tại Châu Âu.",
       cta1: "Nhắn tin qua Facebook",
       cta2: "Dịch vụ của chúng tôi",
       stat1: "5+",
@@ -239,7 +337,7 @@ const translations: Record<Language, TranslationKeys> = {
       s3Title: "Hỗ trợ pháp lý",
       s3Desc: "Hỗ trợ pháp lý toàn diện trong quá trình tuyển dụng và hợp pháp hóa cư trú.",
       s4Title: "Hỗ trợ sau khi đến",
-      s4Desc: "Hỗ trợ nhà ở, đăng ký và thích nghi tại quốc gia mới để di dời thoải mái.",
+      s4Desc: "Hỗ trợ nhà ở, đăng ký và thích nghi tại quốc gia mới.",
     },
     howItWorks: {
       title: "Cách thức hoạt động",
@@ -258,8 +356,8 @@ const translations: Record<Language, TranslationKeys> = {
     about: {
       title: "Về chúng tôi",
       subtitle: "Được hàng trăm khách hàng trên toàn thế giới tin tưởng",
-      p1: "Công ty chúng tôi là cơ quan tuyển dụng quốc tế chính thức, đăng ký và hoạt động theo luật EU. Chúng tôi đã có mặt trên thị trường hơn 5 năm và giúp hàng trăm người có được giấy phép lao động, giấy phép cư trú và vị trí ổn định tại Châu Âu.",
-      p2: "Chúng tôi tin rằng mọi người đều xứng đáng có cơ hội sống xứng đáng và làm việc hợp pháp. Các chuyên gia của chúng tôi nói nhiều ngôn ngữ, hiểu đặc thù luật di cư của các nước khác nhau và làm cho quá trình thoải mái nhất có thể.",
+      p1: "Global Bridges INT. là cơ quan tuyển dụng quốc tế chính thức, đăng ký và hoạt động theo luật EU. Chúng tôi đã có mặt trên thị trường hơn 5 năm.",
+      p2: "Chúng tôi tin rằng mọi người đều xứng đáng có cơ hội sống xứng đáng và làm việc hợp pháp.",
     },
     contact: {
       title: "Liên hệ",
@@ -270,6 +368,36 @@ const translations: Record<Language, TranslationKeys> = {
       workingHours: "Giờ làm việc",
       workingHoursValue: "T2-T6: 9:00-18:00",
       satValue: "T7: 10:00-15:00",
+    },
+    blog: {
+      title: "Blog & Đánh giá",
+      subtitle: "Hình ảnh, video và lời chứng thực từ khách hàng",
+      readMore: "Đọc thêm",
+      photo: "Ảnh",
+      video: "Video",
+      review: "Đánh giá",
+      noItems: "Chưa có bài viết. Hãy quay lại sau!",
+    },
+    agencies: {
+      title: "Dành cho đại lý tuyển dụng",
+      subtitle: "Hợp tác với chúng tôi để đưa ứng viên của bạn vào vị trí EU",
+      benefit1Title: "Sẵn sàng ứng viên",
+      benefit1Desc: "Đã có ứng viên? Chúng tôi xử lý việc bố trí EU, giấy tờ và tuân thủ pháp lý.",
+      benefit2Title: "Chia sẻ doanh thu",
+      benefit2Desc: "Kiếm hoa hồng cho mỗi lần bố trí thành công qua chương trình đối tác minh bạch.",
+      benefit3Title: "Khung pháp lý",
+      benefit3Desc: "Hợp đồng lao động, bảo hiểm xã hội và giấy phép lao động tuân thủ EU.",
+      benefit4Title: "Hỗ trợ chuyên biệt",
+      benefit4Desc: "Quản lý tài khoản cá nhân cho đại lý với xử lý ưu tiên.",
+      cta: "Trở thành đối tác",
+      ctaDesc: "Liên hệ để thảo luận cơ hội hợp tác.",
+    },
+    news: {
+      title: "Tin tức mới nhất",
+      subtitle: "Cập nhật tin tức mới nhất từ Global Bridges INT.",
+      backHome: "← Về trang chủ",
+      noNews: "Chưa có tin tức. Hãy theo dõi!",
+      readMore: "Đọc bài đầy đủ",
     },
     footer: {
       rights: "Mọi quyền được bảo lưu.",
@@ -283,6 +411,8 @@ const translations: Record<Language, TranslationKeys> = {
       howItWorks: "Как это работает",
       about: "О нас",
       contact: "Контакты",
+      news: "Новости",
+      forAgencies: "Для агентств",
       freeConsultation: "Бесплатная консультация",
     },
     hero: {
@@ -303,11 +433,11 @@ const translations: Record<Language, TranslationKeys> = {
       s1Title: "Трудоустройство в ЕС",
       s1Desc: "Подбор проверенных вакансий в странах ЕС с официальным трудоустройством и социальной защитой.",
       s2Title: "Оформление документов",
-      s2Desc: "Подготовка и оформление документов на визу, вид на жительство и разрешение на работу в соответствии с законодательством ЕС.",
+      s2Desc: "Подготовка и оформление документов на визу, вид на жительство и разрешение на работу.",
       s3Title: "Юридическая поддержка",
-      s3Desc: "Полное юридическое сопровождение процесса трудоустройства и легализации пребывания в стране.",
+      s3Desc: "Полное юридическое сопровождение процесса трудоустройства и легализации пребывания.",
       s4Title: "Поддержка после приезда",
-      s4Desc: "Помощь с жильём, регистрацией и адаптацией в новой стране для комфортного переезда.",
+      s4Desc: "Помощь с жильём, регистрацией и адаптацией в новой стране.",
     },
     howItWorks: {
       title: "Как это работает",
@@ -326,8 +456,8 @@ const translations: Record<Language, TranslationKeys> = {
     about: {
       title: "О нас",
       subtitle: "Нам доверяют сотни клиентов по всему миру",
-      p1: "Наша компания — официальное международное агентство по трудоустройству, зарегистрированное и работающее в рамках законодательства ЕС. Мы на рынке более 5 лет и помогли сотням людей получить разрешения на работу, вид на жительство и стабильные позиции в Европе.",
-      p2: "Мы верим, что каждый человек заслуживает возможности жить достойно и работать легально. Наши специалисты говорят на нескольких языках, разбираются в особенностях миграционного законодательства разных стран и делают процесс максимально комфортным.",
+      p1: "Global Bridges INT. — официальное международное агентство по трудоустройству, зарегистрированное и работающее в рамках законодательства ЕС. Мы на рынке более 5 лет и помогли сотням людей получить разрешения на работу, вид на жительство и стабильные позиции в Европе.",
+      p2: "Мы верим, что каждый человек заслуживает возможности жить достойно и работать легально. Наши специалисты говорят на нескольких языках и делают процесс максимально комфортным.",
     },
     contact: {
       title: "Свяжитесь с нами",
@@ -338,6 +468,36 @@ const translations: Record<Language, TranslationKeys> = {
       workingHours: "Часы работы",
       workingHoursValue: "Пн-Пт: 9:00-18:00",
       satValue: "Сб: 10:00-15:00",
+    },
+    blog: {
+      title: "Блог и отзывы",
+      subtitle: "Фото, видео и отзывы наших клиентов",
+      readMore: "Читать далее",
+      photo: "Фото",
+      video: "Видео",
+      review: "Отзыв",
+      noItems: "Публикаций пока нет. Загляните позже!",
+    },
+    agencies: {
+      title: "Для кадровых агентств",
+      subtitle: "Станьте нашим партнёром и размещайте своих кандидатов на позиции в ЕС",
+      benefit1Title: "Готовые кандидаты",
+      benefit1Desc: "Уже есть кандидаты? Мы берём на себя трудоустройство в ЕС, документы и юридическое соответствие.",
+      benefit2Title: "Распределение дохода",
+      benefit2Desc: "Получайте комиссию за каждое успешное трудоустройство через нашу прозрачную партнёрскую программу.",
+      benefit3Title: "Правовая база",
+      benefit3Desc: "Трудовые договоры, социальное страхование и рабочие разрешения в соответствии с законодательством ЕС.",
+      benefit4Title: "Персональная поддержка",
+      benefit4Desc: "Персональный менеджер для вашего агентства с приоритетной обработкой и регулярной отчётностью.",
+      cta: "Стать партнёром",
+      ctaDesc: "Свяжитесь с нами, чтобы обсудить возможности партнёрства и начать размещать кандидатов.",
+    },
+    news: {
+      title: "Последние новости",
+      subtitle: "Будьте в курсе последних обновлений от Global Bridges INT.",
+      backHome: "← На главную",
+      noNews: "Новостей пока нет. Следите за обновлениями!",
+      readMore: "Читать полностью",
     },
     footer: {
       rights: "Все права защищены.",
