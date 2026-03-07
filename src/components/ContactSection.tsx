@@ -71,7 +71,7 @@ export const ContactSection = () => {
               <Mail className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />
             </div>
             <h3 className="font-heading font-bold text-lg sm:text-xl text-primary-foreground mb-2">{t.contact.email}</h3>
-            <p className="text-sm text-primary-foreground/60">info@globalbridge.com</p>
+            <p className="text-sm text-primary-foreground/60">international@globalbridges.info</p>
           </motion.a>
 
           {/* Working Hours */}
