@@ -13,13 +13,15 @@ export const Header = () => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
-  const navItems = [
+  type NavHighlight = false | "news" | "agencies";
+
+  const navItems: { label: string; href: string; highlight: NavHighlight }[] = [
     { label: t.nav.home, href: isHome ? "#home" : "/", highlight: false },
     { label: t.nav.services, href: isHome ? "#services" : "/#services", highlight: false },
     { label: t.nav.howItWorks, href: isHome ? "#how-it-works" : "/#how-it-works", highlight: false },
     { label: t.nav.about, href: isHome ? "#about" : "/#about", highlight: false },
-    { label: t.nav.news, href: "/news", highlight: "news" as const },
-    { label: t.nav.forAgencies, href: "/agencies", highlight: "agencies" as const },
+    { label: t.nav.news, href: "/news", highlight: "news" },
+    { label: t.nav.forAgencies, href: "/agencies", highlight: "agencies" },
     { label: t.nav.contact, href: isHome ? "#contact" : "/#contact", highlight: false },
   ];
 
