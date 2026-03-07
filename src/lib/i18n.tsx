@@ -89,6 +89,17 @@ type TranslationKeys = {
     benefit4Desc: string;
     cta: string;
     ctaDesc: string;
+    whyTitle: string;
+    howTitle: string;
+    ctaTitle: string;
+    step1: string;
+    step2: string;
+    step3: string;
+    step4: string;
+  };
+  hint: {
+    langTitle: string;
+    langDesc: string;
   };
   news: {
     title: string;
@@ -191,6 +202,17 @@ const translations: Record<Language, TranslationKeys> = {
       benefit4Desc: "Personal account manager for your agency with priority processing and regular reporting.",
       cta: "Become a Partner",
       ctaDesc: "Contact us to discuss partnership opportunities and start placing your candidates in EU positions.",
+      whyTitle: "Why Partner With Us?",
+      howTitle: "How Partnership Works",
+      ctaTitle: "Ready to Start?",
+      step1: "Sign Partnership Agreement",
+      step2: "Submit Your Candidates",
+      step3: "We Handle Documents & Logistics",
+      step4: "Candidates Start Working",
+    },
+    hint: {
+      langTitle: "🌍 Available in your language!",
+      langDesc: "Click the globe icon in the header to switch languages.",
     },
     news: {
       title: "Latest News",
@@ -291,6 +313,17 @@ const translations: Record<Language, TranslationKeys> = {
       benefit4Desc: "Öncelikli işlem ve düzenli raporlama ile ajansınız için kişisel hesap yöneticisi.",
       cta: "Ortak Olun",
       ctaDesc: "Ortaklık fırsatlarını görüşmek ve adaylarınızı AB pozisyonlarına yerleştirmeye başlamak için bize ulaşın.",
+      whyTitle: "Neden Bizimle Ortak Olmalısınız?",
+      howTitle: "Ortaklık Nasıl Çalışır",
+      ctaTitle: "Başlamaya Hazır mısınız?",
+      step1: "Ortaklık Sözleşmesi İmzalayın",
+      step2: "Adaylarınızı Gönderin",
+      step3: "Belgeleri ve Lojistiği Biz Hallederiz",
+      step4: "Adaylar Çalışmaya Başlar",
+    },
+    hint: {
+      langTitle: "🌍 Dilinizde mevcut!",
+      langDesc: "Dil değiştirmek için başlıktaki küre simgesine tıklayın.",
     },
     news: {
       title: "Son Haberler",
@@ -391,6 +424,17 @@ const translations: Record<Language, TranslationKeys> = {
       benefit4Desc: "Quản lý tài khoản cá nhân cho đại lý với xử lý ưu tiên.",
       cta: "Trở thành đối tác",
       ctaDesc: "Liên hệ để thảo luận cơ hội hợp tác.",
+      whyTitle: "Tại sao hợp tác với chúng tôi?",
+      howTitle: "Quy trình hợp tác",
+      ctaTitle: "Sẵn sàng bắt đầu?",
+      step1: "Ký thỏa thuận hợp tác",
+      step2: "Gửi ứng viên của bạn",
+      step3: "Chúng tôi xử lý giấy tờ & logistics",
+      step4: "Ứng viên bắt đầu làm việc",
+    },
+    hint: {
+      langTitle: "🌍 Có sẵn bằng ngôn ngữ của bạn!",
+      langDesc: "Nhấp vào biểu tượng quả cầu để chuyển đổi ngôn ngữ.",
     },
     news: {
       title: "Tin tức mới nhất",
@@ -491,6 +535,17 @@ const translations: Record<Language, TranslationKeys> = {
       benefit4Desc: "Персональный менеджер для вашего агентства с приоритетной обработкой и регулярной отчётностью.",
       cta: "Стать партнёром",
       ctaDesc: "Свяжитесь с нами, чтобы обсудить возможности партнёрства и начать размещать кандидатов.",
+      whyTitle: "Почему стоит стать партнёром?",
+      howTitle: "Как работает партнёрство",
+      ctaTitle: "Готовы начать?",
+      step1: "Подпишите партнёрское соглашение",
+      step2: "Отправьте своих кандидатов",
+      step3: "Мы оформим документы и логистику",
+      step4: "Кандидаты приступают к работе",
+    },
+    hint: {
+      langTitle: "🌍 Доступно на вашем языке!",
+      langDesc: "Нажмите на иконку глобуса в шапке, чтобы сменить язык.",
     },
     news: {
       title: "Последние новости",
