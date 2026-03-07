@@ -60,7 +60,7 @@ export const ContactSection = () => {
 
           {/* Email */}
           <motion.a
-            href="mailto:info@globalbridge.com"
+            href="mailto:international@globalbridges.info"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
