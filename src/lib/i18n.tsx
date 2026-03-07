@@ -89,6 +89,17 @@ type TranslationKeys = {
     benefit4Desc: string;
     cta: string;
     ctaDesc: string;
+    whyTitle: string;
+    howTitle: string;
+    ctaTitle: string;
+    step1: string;
+    step2: string;
+    step3: string;
+    step4: string;
+  };
+  hint: {
+    langTitle: string;
+    langDesc: string;
   };
   news: {
     title: string;
