@@ -3,12 +3,12 @@ import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { HowItWorksSection } from "@/components/HowItWorksSection";
-import { AgencyPartnersSection } from "@/components/AgencyPartnersSection";
 import { AboutSection } from "@/components/AboutSection";
 import { BlogSection } from "@/components/BlogSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { MessengerFAB } from "@/components/MessengerFAB";
+import { LanguageHint } from "@/components/LanguageHint";
 
 const Index = () => {
   return (
@@ -18,12 +18,12 @@ const Index = () => {
         <HeroSection />
         <ServicesSection />
         <HowItWorksSection />
-        <AgencyPartnersSection />
         <AboutSection />
         <BlogSection />
         <ContactSection />
         <Footer />
         <MessengerFAB />
+        <LanguageHint />
       </div>
     </I18nProvider>
   );

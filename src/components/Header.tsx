@@ -14,14 +14,25 @@ export const Header = () => {
   const isHome = location.pathname === "/";
 
   const navItems = [
-    { label: t.nav.home, href: isHome ? "#home" : "/" },
-    { label: t.nav.services, href: isHome ? "#services" : "/#services" },
-    { label: t.nav.howItWorks, href: isHome ? "#how-it-works" : "/#how-it-works" },
-    { label: t.nav.forAgencies, href: isHome ? "#agencies" : "/#agencies" },
-    { label: t.nav.about, href: isHome ? "#about" : "/#about" },
-    { label: t.nav.news, href: "/news" },
-    { label: t.nav.contact, href: isHome ? "#contact" : "/#contact" },
+    { label: t.nav.home, href: isHome ? "#home" : "/", highlight: false },
+    { label: t.nav.services, href: isHome ? "#services" : "/#services", highlight: false },
+    { label: t.nav.howItWorks, href: isHome ? "#how-it-works" : "/#how-it-works", highlight: false },
+    { label: t.nav.about, href: isHome ? "#about" : "/#about", highlight: false },
+    { label: t.nav.news, href: "/news", highlight: "news" as const },
+    { label: t.nav.forAgencies, href: "/agencies", highlight: "agencies" as const },
+    { label: t.nav.contact, href: isHome ? "#contact" : "/#contact", highlight: false },
   ];
+
+  const getNavClass = (highlight: false | "news" | "agencies", mobile = false) => {
+    const base = mobile ? "py-2" : "";
+    if (highlight === "news") {
+      return `text-sm font-semibold text-accent hover:text-accent/80 transition-colors ${base}`;
+    }
+    if (highlight === "agencies") {
+      return `text-sm font-semibold text-secondary hover:text-secondary/80 transition-colors ${base}`;
+    }
+    return `text-sm font-medium text-muted-foreground hover:text-foreground transition-colors ${base}`;
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-xl border-b border-border">
@@ -42,7 +53,7 @@ export const Header = () => {
               <Link
                 key={item.href}
                 to={item.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                className={getNavClass(item.highlight)}
               >
                 {item.label}
               </Link>
@@ -50,7 +61,7 @@ export const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                className={getNavClass(item.highlight)}
               >
                 {item.label}
               </a>
@@ -130,7 +141,7 @@ export const Header = () => {
                     key={item.href}
                     to={item.href}
                     onClick={() => setMenuOpen(false)}
-                    className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+                    className={getNavClass(item.highlight, true)}
                   >
                     {item.label}
                   </Link>
@@ -139,7 +150,7 @@ export const Header = () => {
                     key={item.href}
                     href={item.href}
                     onClick={() => setMenuOpen(false)}
-                    className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+                    className={getNavClass(item.highlight, true)}
                   >
                     {item.label}
                   </a>
