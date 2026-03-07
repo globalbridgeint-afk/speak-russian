@@ -424,6 +424,17 @@ const translations: Record<Language, TranslationKeys> = {
       benefit4Desc: "Quản lý tài khoản cá nhân cho đại lý với xử lý ưu tiên.",
       cta: "Trở thành đối tác",
       ctaDesc: "Liên hệ để thảo luận cơ hội hợp tác.",
+      whyTitle: "Tại sao hợp tác với chúng tôi?",
+      howTitle: "Quy trình hợp tác",
+      ctaTitle: "Sẵn sàng bắt đầu?",
+      step1: "Ký thỏa thuận hợp tác",
+      step2: "Gửi ứng viên của bạn",
+      step3: "Chúng tôi xử lý giấy tờ & logistics",
+      step4: "Ứng viên bắt đầu làm việc",
+    },
+    hint: {
+      langTitle: "🌍 Có sẵn bằng ngôn ngữ của bạn!",
+      langDesc: "Nhấp vào biểu tượng quả cầu để chuyển đổi ngôn ngữ.",
     },
     news: {
       title: "Tin tức mới nhất",
