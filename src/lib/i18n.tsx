@@ -202,6 +202,17 @@ const translations: Record<Language, TranslationKeys> = {
       benefit4Desc: "Personal account manager for your agency with priority processing and regular reporting.",
       cta: "Become a Partner",
       ctaDesc: "Contact us to discuss partnership opportunities and start placing your candidates in EU positions.",
+      whyTitle: "Why Partner With Us?",
+      howTitle: "How Partnership Works",
+      ctaTitle: "Ready to Start?",
+      step1: "Sign Partnership Agreement",
+      step2: "Submit Your Candidates",
+      step3: "We Handle Documents & Logistics",
+      step4: "Candidates Start Working",
+    },
+    hint: {
+      langTitle: "🌍 Available in your language!",
+      langDesc: "Click the globe icon in the header to switch languages.",
     },
     news: {
       title: "Latest News",
