@@ -313,6 +313,17 @@ const translations: Record<Language, TranslationKeys> = {
       benefit4Desc: "Öncelikli işlem ve düzenli raporlama ile ajansınız için kişisel hesap yöneticisi.",
       cta: "Ortak Olun",
       ctaDesc: "Ortaklık fırsatlarını görüşmek ve adaylarınızı AB pozisyonlarına yerleştirmeye başlamak için bize ulaşın.",
+      whyTitle: "Neden Bizimle Ortak Olmalısınız?",
+      howTitle: "Ortaklık Nasıl Çalışır",
+      ctaTitle: "Başlamaya Hazır mısınız?",
+      step1: "Ortaklık Sözleşmesi İmzalayın",
+      step2: "Adaylarınızı Gönderin",
+      step3: "Belgeleri ve Lojistiği Biz Hallederiz",
+      step4: "Adaylar Çalışmaya Başlar",
+    },
+    hint: {
+      langTitle: "🌍 Dilinizde mevcut!",
+      langDesc: "Dil değiştirmek için başlıktaki küre simgesine tıklayın.",
     },
     news: {
       title: "Son Haberler",
