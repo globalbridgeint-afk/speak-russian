@@ -32,7 +32,7 @@ const PrivacyContent = () => {
             <section>
               <h2 className="font-heading text-xl font-bold text-foreground mb-3">1. Introduction</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Global Bridges INT. ("we," "our," or "us") operates the website globalbridges.info (the "Service"). This Privacy Policy informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. By using the Service, you agree to the collection and use of information in accordance with this policy.
+                Global Bridges INT. ("we," "our," or "us") is an international employment agency operating the website global-bridge.world (the "Service"). We specialize in connecting job seekers with employers across borders, providing recruitment, staffing, and employment placement services. This Privacy Policy informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. By using the Service, you agree to the collection and use of information in accordance with this policy.
               </p>
             </section>
 
@@ -40,7 +40,9 @@ const PrivacyContent = () => {
               <h2 className="font-heading text-xl font-bold text-foreground mb-3">2. Information We Collect</h2>
               <p className="text-muted-foreground leading-relaxed mb-3">We may collect the following types of information:</p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li><strong className="text-foreground">Personal Information:</strong> Name, email address, phone number, and other contact details you voluntarily provide through our contact forms.</li>
+                <li><strong className="text-foreground">Personal Information:</strong> Name, email address, phone number, nationality, date of birth, and other contact details you voluntarily provide through our contact forms or job applications.</li>
+                <li><strong className="text-foreground">Employment-Related Data:</strong> Resumes/CVs, work experience, education history, professional qualifications, certifications, language skills, work permits, visa status, and other information relevant to job placement and recruitment services.</li>
+                <li><strong className="text-foreground">Identity Documents:</strong> Copies of passports, national ID cards, work authorization documents, and other identification as required for employment verification and placement processes.</li>
                 <li><strong className="text-foreground">Usage Data:</strong> Information on how the Service is accessed and used, including your IP address, browser type, browser version, pages visited, time and date of visit, time spent on pages, and other diagnostic data.</li>
                 <li><strong className="text-foreground">Cookies and Tracking Technologies:</strong> We use cookies and similar tracking technologies to track activity on our Service and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</li>
               </ul>
@@ -50,12 +52,16 @@ const PrivacyContent = () => {
               <h2 className="font-heading text-xl font-bold text-foreground mb-3">3. How We Use Your Information</h2>
               <p className="text-muted-foreground leading-relaxed mb-3">We use the collected data for the following purposes:</p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>To provide and maintain our Service</li>
-                <li>To notify you about changes to our Service</li>
+                <li>To provide and maintain our recruitment and employment placement services</li>
+                <li>To match job seekers with suitable employment opportunities</li>
+                <li>To share candidate profiles with prospective employers (with your consent)</li>
+                <li>To verify employment eligibility and work authorization</li>
+                <li>To notify you about relevant job opportunities and changes to our Service</li>
                 <li>To provide customer support</li>
                 <li>To gather analysis or valuable information so that we can improve our Service</li>
                 <li>To monitor the usage of our Service</li>
                 <li>To detect, prevent, and address technical issues</li>
+                <li>To comply with legal obligations related to employment and labor laws</li>
                 <li>To provide you with news, special offers, and general information about other services we offer, unless you have opted not to receive such information</li>
               </ul>
             </section>
@@ -74,14 +80,14 @@ const PrivacyContent = () => {
 
             <section>
               <h2 className="font-heading text-xl font-bold text-foreground mb-3">5. Data Sharing and Disclosure</h2>
-              <p className="text-muted-foreground leading-relaxed mb-3">We may disclose your personal data in good faith belief that such action is necessary to:</p>
+              <p className="text-muted-foreground leading-relaxed mb-3">As an employment agency, we may share your personal data with:</p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>Comply with a legal obligation</li>
-                <li>Protect and defend the rights or property of Global Bridges INT.</li>
-                <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
-                <li>Protect the personal safety of users of the Service or the public</li>
-                <li>Protect against legal liability</li>
+                <li><strong className="text-foreground">Prospective Employers:</strong> We share candidate profiles, resumes, and relevant qualifications with employers who have suitable job openings (only with your prior consent).</li>
+                <li><strong className="text-foreground">Partner Agencies:</strong> We may share data with trusted recruitment partners in other countries to facilitate international job placements.</li>
+                <li><strong className="text-foreground">Government Authorities:</strong> When required for work permits, visa applications, or compliance with employment and immigration laws.</li>
+                <li><strong className="text-foreground">Service Providers:</strong> Third-party companies that assist us in operating our website, conducting our business, or servicing you.</li>
               </ul>
+              <p className="text-muted-foreground leading-relaxed mt-3">We may also disclose your personal data in good faith belief that such action is necessary to comply with a legal obligation, protect the rights or property of Global Bridges INT., prevent wrongdoing, protect the personal safety of users, or protect against legal liability.</p>
             </section>
 
             <section>
@@ -134,7 +140,7 @@ const PrivacyContent = () => {
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground mt-3">
                 <li>By email: <a href="mailto:international@globalbridges.info" className="text-accent hover:underline">international@globalbridges.info</a></li>
-                <li>By visiting our website: <a href="https://globalbridges.info" className="text-accent hover:underline">globalbridges.info</a></li>
+                <li>By visiting our website: <a href="https://global-bridge.world" className="text-accent hover:underline">global-bridge.world</a></li>
               </ul>
             </section>
           </div>
