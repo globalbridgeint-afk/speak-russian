@@ -80,14 +80,14 @@ const PrivacyContent = () => {
 
             <section>
               <h2 className="font-heading text-xl font-bold text-foreground mb-3">5. Data Sharing and Disclosure</h2>
-              <p className="text-muted-foreground leading-relaxed mb-3">We may disclose your personal data in good faith belief that such action is necessary to:</p>
+              <p className="text-muted-foreground leading-relaxed mb-3">As an employment agency, we may share your personal data with:</p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>Comply with a legal obligation</li>
-                <li>Protect and defend the rights or property of Global Bridges INT.</li>
-                <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
-                <li>Protect the personal safety of users of the Service or the public</li>
-                <li>Protect against legal liability</li>
+                <li><strong className="text-foreground">Prospective Employers:</strong> We share candidate profiles, resumes, and relevant qualifications with employers who have suitable job openings (only with your prior consent).</li>
+                <li><strong className="text-foreground">Partner Agencies:</strong> We may share data with trusted recruitment partners in other countries to facilitate international job placements.</li>
+                <li><strong className="text-foreground">Government Authorities:</strong> When required for work permits, visa applications, or compliance with employment and immigration laws.</li>
+                <li><strong className="text-foreground">Service Providers:</strong> Third-party companies that assist us in operating our website, conducting our business, or servicing you.</li>
               </ul>
+              <p className="text-muted-foreground leading-relaxed mt-3">We may also disclose your personal data in good faith belief that such action is necessary to comply with a legal obligation, protect the rights or property of Global Bridges INT., prevent wrongdoing, protect the personal safety of users, or protect against legal liability.</p>
             </section>
 
             <section>
