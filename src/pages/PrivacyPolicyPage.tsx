@@ -52,12 +52,16 @@ const PrivacyContent = () => {
               <h2 className="font-heading text-xl font-bold text-foreground mb-3">3. How We Use Your Information</h2>
               <p className="text-muted-foreground leading-relaxed mb-3">We use the collected data for the following purposes:</p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>To provide and maintain our Service</li>
-                <li>To notify you about changes to our Service</li>
+                <li>To provide and maintain our recruitment and employment placement services</li>
+                <li>To match job seekers with suitable employment opportunities</li>
+                <li>To share candidate profiles with prospective employers (with your consent)</li>
+                <li>To verify employment eligibility and work authorization</li>
+                <li>To notify you about relevant job opportunities and changes to our Service</li>
                 <li>To provide customer support</li>
                 <li>To gather analysis or valuable information so that we can improve our Service</li>
                 <li>To monitor the usage of our Service</li>
                 <li>To detect, prevent, and address technical issues</li>
+                <li>To comply with legal obligations related to employment and labor laws</li>
                 <li>To provide you with news, special offers, and general information about other services we offer, unless you have opted not to receive such information</li>
               </ul>
             </section>
