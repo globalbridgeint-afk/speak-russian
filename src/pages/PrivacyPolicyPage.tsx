@@ -40,7 +40,9 @@ const PrivacyContent = () => {
               <h2 className="font-heading text-xl font-bold text-foreground mb-3">2. Information We Collect</h2>
               <p className="text-muted-foreground leading-relaxed mb-3">We may collect the following types of information:</p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li><strong className="text-foreground">Personal Information:</strong> Name, email address, phone number, and other contact details you voluntarily provide through our contact forms.</li>
+                <li><strong className="text-foreground">Personal Information:</strong> Name, email address, phone number, nationality, date of birth, and other contact details you voluntarily provide through our contact forms or job applications.</li>
+                <li><strong className="text-foreground">Employment-Related Data:</strong> Resumes/CVs, work experience, education history, professional qualifications, certifications, language skills, work permits, visa status, and other information relevant to job placement and recruitment services.</li>
+                <li><strong className="text-foreground">Identity Documents:</strong> Copies of passports, national ID cards, work authorization documents, and other identification as required for employment verification and placement processes.</li>
                 <li><strong className="text-foreground">Usage Data:</strong> Information on how the Service is accessed and used, including your IP address, browser type, browser version, pages visited, time and date of visit, time spent on pages, and other diagnostic data.</li>
                 <li><strong className="text-foreground">Cookies and Tracking Technologies:</strong> We use cookies and similar tracking technologies to track activity on our Service and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</li>
               </ul>
