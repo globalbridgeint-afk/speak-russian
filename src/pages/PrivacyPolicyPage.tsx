@@ -134,7 +134,7 @@ const PrivacyContent = () => {
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground mt-3">
                 <li>By email: <a href="mailto:international@globalbridges.info" className="text-accent hover:underline">international@globalbridges.info</a></li>
-                <li>By visiting our website: <a href="https://globalbridges.info" className="text-accent hover:underline">globalbridges.info</a></li>
+                <li>By visiting our website: <a href="https://global-bridge.world" className="text-accent hover:underline">global-bridge.world</a></li>
               </ul>
             </section>
           </div>
