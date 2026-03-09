@@ -132,7 +132,7 @@ const translations: Record<Language, TranslationKeys> = {
       cta1: "Message Us on Facebook",
       cta2: "Our Services",
       stat1: "5+",
-      stat1Label: "Years Experience",
+      stat1Label: "Years of Team Experience",
       stat2: "500+",
       stat2Label: "Successful Cases",
       stat3: "10+",
@@ -167,7 +167,7 @@ const translations: Record<Language, TranslationKeys> = {
     about: {
       title: "About Us",
       subtitle: "Trusted by hundreds of clients across the globe",
-      p1: "Global Bridges INT. is an official international employment agency, registered and operating under EU law. We have been in the market for over 5 years and have helped hundreds of people obtain work permits, residence permits and stable positions in Europe.",
+      p1: "Global Bridges INT. is an official international employment agency, registered and operating under EU law. Our team has over 5 years of combined experience in the recruitment industry and has helped hundreds of people obtain work permits, residence permits and stable positions in Europe.",
       p2: "We believe that everyone deserves the opportunity to live with dignity and work legally. Our specialists speak several languages, understand the peculiarities of migration legislation of different countries and make the process as comfortable as possible.",
     },
     contact: {
@@ -243,7 +243,7 @@ const translations: Record<Language, TranslationKeys> = {
       cta1: "Facebook'tan Mesaj Gönder",
       cta2: "Hizmetlerimiz",
       stat1: "5+",
-      stat1Label: "Yıllık Deneyim",
+      stat1Label: "Yıllık Ekip Deneyimi",
       stat2: "500+",
       stat2Label: "Başarılı Vaka",
       stat3: "10+",
@@ -278,7 +278,7 @@ const translations: Record<Language, TranslationKeys> = {
     about: {
       title: "Hakkımızda",
       subtitle: "Dünya genelinde yüzlerce müşteri tarafından güvenilmektedir",
-      p1: "Global Bridges INT., AB hukuku kapsamında kayıtlı ve faaliyet gösteren resmi bir uluslararası istihdam ajansıdır. 5 yılı aşkın süredir piyasadayız ve yüzlerce kişinin çalışma izni, oturma izni ve Avrupa'da istikrarlı pozisyon elde etmesine yardımcı olduk.",
+      p1: "Global Bridges INT., AB hukuku kapsamında kayıtlı ve faaliyet gösteren resmi bir uluslararası istihdam ajansıdır. Ekibimiz işe alım sektöründe 5 yılı aşkın deneyime sahiptir ve yüzlerce kişinin çalışma izni, oturma izni ve Avrupa'da istikrarlı pozisyon elde etmesine yardımcı olmuştur.",
       p2: "Herkesin onurlu bir şekilde yaşama ve yasal olarak çalışma hakkı olduğuna inanıyoruz.",
     },
     contact: {
@@ -354,7 +354,7 @@ const translations: Record<Language, TranslationKeys> = {
       cta1: "Nhắn tin qua Facebook",
       cta2: "Dịch vụ của chúng tôi",
       stat1: "5+",
-      stat1Label: "Năm kinh nghiệm",
+      stat1Label: "Năm kinh nghiệm đội ngũ",
       stat2: "500+",
       stat2Label: "Trường hợp thành công",
       stat3: "10+",
@@ -389,7 +389,7 @@ const translations: Record<Language, TranslationKeys> = {
     about: {
       title: "Về chúng tôi",
       subtitle: "Được hàng trăm khách hàng trên toàn thế giới tin tưởng",
-      p1: "Global Bridges INT. là cơ quan tuyển dụng quốc tế chính thức, đăng ký và hoạt động theo luật EU. Chúng tôi đã có mặt trên thị trường hơn 5 năm.",
+      p1: "Global Bridges INT. là cơ quan tuyển dụng quốc tế chính thức, đăng ký và hoạt động theo luật EU. Đội ngũ của chúng tôi có hơn 5 năm kinh nghiệm trong ngành tuyển dụng.",
       p2: "Chúng tôi tin rằng mọi người đều xứng đáng có cơ hội sống xứng đáng và làm việc hợp pháp.",
     },
     contact: {
