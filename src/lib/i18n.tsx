@@ -167,7 +167,7 @@ const translations: Record<Language, TranslationKeys> = {
     about: {
       title: "About Us",
       subtitle: "Trusted by hundreds of clients across the globe",
-      p1: "Global Bridges INT. is an official international employment agency, registered and operating under EU law. We have been in the market for over 5 years and have helped hundreds of people obtain work permits, residence permits and stable positions in Europe.",
+      p1: "Global Bridges INT. is an official international employment agency, registered and operating under EU law. Our team has over 5 years of combined experience in the recruitment industry and has helped hundreds of people obtain work permits, residence permits and stable positions in Europe.",
       p2: "We believe that everyone deserves the opportunity to live with dignity and work legally. Our specialists speak several languages, understand the peculiarities of migration legislation of different countries and make the process as comfortable as possible.",
     },
     contact: {
