@@ -132,7 +132,7 @@ const translations: Record<Language, TranslationKeys> = {
       cta1: "Message Us on Facebook",
       cta2: "Our Services",
       stat1: "5+",
-      stat1Label: "Years Experience",
+      stat1Label: "Years of Team Experience",
       stat2: "500+",
       stat2Label: "Successful Cases",
       stat3: "10+",
