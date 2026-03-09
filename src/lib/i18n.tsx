@@ -354,7 +354,7 @@ const translations: Record<Language, TranslationKeys> = {
       cta1: "Nhắn tin qua Facebook",
       cta2: "Dịch vụ của chúng tôi",
       stat1: "5+",
-      stat1Label: "Năm kinh nghiệm",
+      stat1Label: "Năm kinh nghiệm đội ngũ",
       stat2: "500+",
       stat2Label: "Trường hợp thành công",
       stat3: "10+",
