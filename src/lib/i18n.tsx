@@ -243,7 +243,7 @@ const translations: Record<Language, TranslationKeys> = {
       cta1: "Facebook'tan Mesaj Gönder",
       cta2: "Hizmetlerimiz",
       stat1: "5+",
-      stat1Label: "Yıllık Deneyim",
+      stat1Label: "Yıllık Ekip Deneyimi",
       stat2: "500+",
       stat2Label: "Başarılı Vaka",
       stat3: "10+",
