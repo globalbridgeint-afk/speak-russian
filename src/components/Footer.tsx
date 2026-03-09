@@ -43,7 +43,10 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
+        <div className="border-t border-primary-foreground/10 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center space-y-2">
+          <Link to="/privacy-policy" className="text-sm text-primary-foreground/50 hover:text-primary-foreground/70 transition-colors">
+            Privacy Policy
+          </Link>
           <p className="text-sm text-primary-foreground/40">
             © {new Date().getFullYear()} Global Bridges INT. {t.footer.rights}
           </p>
