@@ -32,7 +32,7 @@ const PrivacyContent = () => {
             <section>
               <h2 className="font-heading text-xl font-bold text-foreground mb-3">1. Introduction</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Global Bridges INT. ("we," "our," or "us") operates the website globalbridges.info (the "Service"). This Privacy Policy informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. By using the Service, you agree to the collection and use of information in accordance with this policy.
+                Global Bridges INT. ("we," "our," or "us") is an international employment agency operating the website global-bridge.world (the "Service"). We specialize in connecting job seekers with employers across borders, providing recruitment, staffing, and employment placement services. This Privacy Policy informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. By using the Service, you agree to the collection and use of information in accordance with this policy.
               </p>
             </section>
 
