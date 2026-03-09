@@ -278,7 +278,7 @@ const translations: Record<Language, TranslationKeys> = {
     about: {
       title: "Hakkımızda",
       subtitle: "Dünya genelinde yüzlerce müşteri tarafından güvenilmektedir",
-      p1: "Global Bridges INT., AB hukuku kapsamında kayıtlı ve faaliyet gösteren resmi bir uluslararası istihdam ajansıdır. 5 yılı aşkın süredir piyasadayız ve yüzlerce kişinin çalışma izni, oturma izni ve Avrupa'da istikrarlı pozisyon elde etmesine yardımcı olduk.",
+      p1: "Global Bridges INT., AB hukuku kapsamında kayıtlı ve faaliyet gösteren resmi bir uluslararası istihdam ajansıdır. Ekibimiz işe alım sektöründe 5 yılı aşkın deneyime sahiptir ve yüzlerce kişinin çalışma izni, oturma izni ve Avrupa'da istikrarlı pozisyon elde etmesine yardımcı olmuştur.",
       p2: "Herkesin onurlu bir şekilde yaşama ve yasal olarak çalışma hakkı olduğuna inanıyoruz.",
     },
     contact: {
