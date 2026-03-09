@@ -389,7 +389,7 @@ const translations: Record<Language, TranslationKeys> = {
     about: {
       title: "Về chúng tôi",
       subtitle: "Được hàng trăm khách hàng trên toàn thế giới tin tưởng",
-      p1: "Global Bridges INT. là cơ quan tuyển dụng quốc tế chính thức, đăng ký và hoạt động theo luật EU. Chúng tôi đã có mặt trên thị trường hơn 5 năm.",
+      p1: "Global Bridges INT. là cơ quan tuyển dụng quốc tế chính thức, đăng ký và hoạt động theo luật EU. Đội ngũ của chúng tôi có hơn 5 năm kinh nghiệm trong ngành tuyển dụng.",
       p2: "Chúng tôi tin rằng mọi người đều xứng đáng có cơ hội sống xứng đáng và làm việc hợp pháp.",
     },
     contact: {
