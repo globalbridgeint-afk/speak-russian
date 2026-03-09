@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NewsPage from "./pages/NewsPage";
 import AgenciesPage from "./pages/AgenciesPage";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 
 const queryClient = new QueryClient();
 
